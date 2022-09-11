@@ -7,7 +7,7 @@ var score = 0;
 
 function quiz(question, answer) {
   var quizAnswer = readlineSync.question(question);
-  if (quizAnswer === answer) {
+  if (quizAnswer.toLowerCase === answer.toLowerCase) {
     console.log("Hurray!! You are RIGHT");
     score = score + 1;
   } else {
